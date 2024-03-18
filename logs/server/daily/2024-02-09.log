@@ -1,0 +1,354 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T12:19:46.767Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-02-09T12:19:46.801Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T12:20:15.861Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T12:20:21.013Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T12:42:03.763Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T12:42:23.788Z"}
+error: 
+    status - 500 
+    message - Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\strategies\session.js:97:41)
+    at attempt (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\middleware\authenticate.js:378:16)
+    at authenticate (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\middleware\authenticate.js:379:7)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:280:10)
+    at initialize (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\middleware\initialize.js:98:5)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\layer.js:95:5) 
+    url - /api/v1/google/auth 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T12:42:46.887Z"}
+error: 
+    status - 500 
+    message - Error: Login sessions require session support. Did you forget to use `express-session` middleware?
+    at SessionStrategy.authenticate (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\strategies\session.js:97:41)
+    at attempt (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\middleware\authenticate.js:378:16)
+    at authenticate (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\middleware\authenticate.js:379:7)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:280:10)
+    at initialize (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport\lib\middleware\initialize.js:98:5)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:328:13)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\index.js:280:10)
+    at expressInit (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\express\lib\router\layer.js:95:5) 
+    url - /favicon.ico 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T12:42:47.524Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T12:57:34.272Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T12:57:50.269Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T12:57:57.251Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:00:14.949Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:00:20.016Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:10:06.369Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:10:12.643Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:16:01.343Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:16:05.664Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:18:22.353Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:18:25.990Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:20:28.254Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:20:37.816Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:22:15.398Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:22:20.083Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:28:17.289Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:28:29.093Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:29:39.309Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:29:42.625Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:33:21.054Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:33:24.974Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:34:01.163Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:34:09.800Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:35:12.122Z"}
+error: Could not connect to the database. querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ETIMEOUT","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-02-09T13:36:27.736Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:39:51.120Z"}
+error: Could not connect to the database. querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ETIMEOUT","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-02-09T13:41:06.840Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:51:51.763Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-02-09T13:51:51.782Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T13:53:54.963Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T13:54:51.102Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:12:28.734Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:12:31.662Z"}
+error: 
+    status - 500 
+    message - TypeError: done is not a function
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:22:20)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXmjukjCSkrLECrWy2qu5drk3kTeQNkYNJDFCN0Qgj9O0Nx7yIvL-G73eE3iryQfzg&scope=profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T14:17:50.496Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:18:50.508Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:18:53.484Z"}
+error: 
+    status - 500 
+    message - TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:196:18
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXmjukjCSkrLECrWy2qu5drk3kTeQNkYNJDFCN0Qgj9O0Nx7yIvL-G73eE3iryQfzg&scope=profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T14:19:04.458Z"}
+error: 
+    status - 500 
+    message - TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:196:18
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXmjukjCSkrLECrWy2qu5drk3kTeQNkYNJDFCN0Qgj9O0Nx7yIvL-G73eE3iryQfzg&scope=profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T14:19:08.319Z"}
+error: 
+    status - 500 
+    message - TypeError: done is not a function
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:22:20)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXnwlyzd5kiQUQtq7l-31bcwXiBdHrcprkMNbpfVdiDyjgp3lNzwq9w56jopk0LjVA&scope=profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T14:19:13.124Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:31:33.764Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:31:36.677Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:33:26.748Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:33:30.005Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:34:09.737Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:34:12.653Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:35:43.368Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:35:46.737Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:40:59.981Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:41:03.804Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:41:38.774Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:41:41.619Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:43:11.666Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:43:14.935Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:50:14.111Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:50:17.865Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:50:36.189Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:50:38.694Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:51:11.840Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:51:14.816Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:51:19.001Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:51:22.300Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:51:29.765Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:51:32.189Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:52:34.322Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:52:37.434Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T14:59:30.735Z"}
+error: 
+    status - 500 
+    message - TokenError: Bad Request
+    at Strategy.OAuth2Strategy.parseErrorResponse (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:373:12)
+    at Strategy.OAuth2Strategy._createOAuthError (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:420:16)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:177:45
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:196:18
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:132:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXk9xI2ttOj2kBz3gyMDoROEjQVkL7ZIn--QU2pwvXBbgOLw8pXf8iRwlfID9MZ0yA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T14:59:31.737Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T14:59:33.844Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:02:40.157Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:02:44.017Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:02:49.529Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:02:52.178Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:04:22.563Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:04:25.388Z"}
+error: 
+    status - 500 
+    message - TypeError: done is not a function
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:23:11)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXl-C02lg9FTSIeCbxPg0D_3-eGDJUHDSjvM1jz6X4whrx_aNiuuqCROa6ZOLii6vQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:04:58.282Z"}
+error: 
+    status - 500 
+    message - TypeError: done is not a function
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:23:11)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXmdrreRDbsbVsiJDWWpI5UOp3iGX8GXGqxP-cb3zkcqzDabENq9HxY9cFYzwBXuqw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:05:39.011Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:06:54.586Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:06:57.355Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:08:12.271Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:08:15.175Z"}
+error: 
+    status - 500 
+    message - TypeError: done is not a function
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:23:11)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXkvp7ca3jukkIaAPP8LOXDAT5U4-HL58A81lUyS2RIZop735n1S5KoEP8ytjdIqpQ&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:08:19.042Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:15:02.914Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:15:06.475Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:15:12.392Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:15:15.616Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'newUser')
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:24:30)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXkZyjoz62owewunxiuUYPuaGIXJ7_hhSklgJ2fAncV1QJ9dVu3BBgJwmnGMa-r5Wg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:16:27.709Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:16:56.688Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:17:00.162Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'newUser')
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:24:30)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXkX84PRtwm9s08PG4UPoihrWt1yU7NuJDFwWUtXbezPomoYIxafHsu8mFm4WN1X-w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:17:41.649Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:18:17.077Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:18:20.199Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'newUser')
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:24:30)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXnT9qqRSE3Fd_SJ8FsyMOl43tC7AsHROhF7UiCZwCupDXGI0U61781SiAbnBhgreg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:18:21.978Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'newUser')
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:24:30)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXlbaw464k-XTlZQAfSPoxzzgqGZw-tQa0l9HE34i-sNJVmgIyNzWZCdEKZ4w8Jzxw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=consent 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:19:28.457Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:20:10.849Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:20:15.071Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:21:47.342Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'create')
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:25:28)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXmcKPrabw66m07y6i2ew1s0_YoEUpvY2JzIatqu5yFZfOiuO6DAfRGKcwjVSUC09w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:21:54.752Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:21:55.747Z"}
+error: 
+    status - 500 
+    message - TypeError: Cannot read properties of undefined (reading 'create')
+    at Strategy._verify (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\src\config\passport.ts:25:28)
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-oauth2\lib\strategy.js:198:24
+    at C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\passport-google-oauth2\lib\oauth2.js:165:7
+    at passBackControl (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:134:9)
+    at IncomingMessage.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\assessmentproject\node_modules\oauth\lib\oauth2.js:157:7)
+    at IncomingMessage.emit (node:events:526:35)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21) 
+    url - /api/v1/google/callback?code=4%2F0AfJohXnNRkxlGadNcF7tzM3W6xXawFsBBdMyYIT9ody8vCD1y062fUHFTAIDj_8-Xjy56w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-02-09T15:22:03.340Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:22:19.152Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:22:21.588Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:22:27.825Z"}
+info: Connected to the database. {"timestamp":"2024-02-09T15:22:30.407Z"}

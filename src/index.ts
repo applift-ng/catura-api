@@ -4,14 +4,14 @@ dotenv.config();
 import express, { Application } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-import passport from 'passport';
+// import passport from 'passport';
 
 import routes from './routes';
 import Database from './config/database';
 import ErrorHandler from './middlewares/error.middleware';
 import Logger from './config/logger';
 import morgan from 'morgan';
-import PassPort from './config/passport';
+// import PassPort from './config/passport';
 import session from 'express-session';
 
 class App {
@@ -21,7 +21,7 @@ class App {
   public api_version: string | number;
   public env: boolean;
   private db = new Database();
-  private passportStrategy = new PassPort();
+  // private passportStrategy = new PassPort();
   private logStream = Logger.logStream;
   private logger = Logger.logger;
   public errorHandler = new ErrorHandler();
@@ -34,7 +34,7 @@ class App {
 
     this.initializeMiddleWares();
     this.initializeRoutes();
-    this.initializePassport();
+    // this.initializePassport();
     this.initializeDatabase();
     this.initializeErrorHandlers();
     this.startApp();
@@ -49,8 +49,8 @@ class App {
         cookie: { secure: true }
       })
     );
-    this.app.use(passport.initialize());
-    this.app.use(passport.session());
+    // this.app.use(passport.initialize());
+    // this.app.use(passport.session());
     this.app.use(cors());
     this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: true }));
@@ -61,9 +61,9 @@ class App {
   public initializeDatabase(): void {
     this.db.initializeDatabase();
   }
-  public initializePassport(): void {
-    this.passportStrategy.initializePassport();
-  }
+  // public initializePassport(): void {
+  //   this.passportStrategy.initializePassport();
+  // }
   public initializeRoutes(): void {
     this.app.use(`/api/${this.api_version}`, routes());
   }

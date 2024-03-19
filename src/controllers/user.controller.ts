@@ -64,12 +64,30 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.newUser(req.body);
-      res.status(HttpStatus.CREATED).json({
-        code: HttpStatus.CREATED,
-        data: data,
-        message: 'User created successfully'
-      });
+      console.log(req.body);
+      const userExists = await this.UserService.getUserByEmail(req.body.email);
+      if (!userExists) {
+        const data = await this.UserService.newUser(req.body);
+        return res.status(HttpStatus.CREATED).json({
+          code: HttpStatus.CREATED,
+          data: {
+            userId: data.id
+          },
+          message: 'User created successfully'
+        });
+      } else {
+        return res.status(HttpStatus.CONFLICT).json({
+          code: HttpStatus.CONFLICT,
+          data: '',
+          message: 'Email already in use'
+        });
+      }
+      // const data = await this.UserService.newUser(req.body);
+      // res.status(HttpStatus.CREATED).json({
+      //   code: HttpStatus.CREATED,
+      //   data: data,
+      //   message: 'User created successfully'
+      // });
     } catch (error) {
       next(error);
     }

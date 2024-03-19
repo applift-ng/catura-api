@@ -1,0 +1,20 @@
+info: ::1 - - [19/Mar/2024:15:22:48 +0000] "GET /api/v1/auth/signup HTTP/1.1" 404 47 "-" "PostmanRuntime/7.37.0"
+
+info: ::1 - - [19/Mar/2024:15:25:49 +0000] "POST /api/v1/auth/signup HTTP/1.1" 404 59 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:26:43 +0000] "POST /api/v1/auth/signup HTTP/1.1" 404 59 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:26:45 +0000] "POST /api/v1/auth/signup HTTP/1.1" 404 59 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:35:49 +0000] "POST /api/v1/auth/signup HTTP/1.1" 201 95 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:36:05 +0000] "POST /api/v1/auth/signup HTTP/1.1" 409 55 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:38:28 +0000] "POST /api/v1/auth/signup HTTP/1.1" 409 55 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:38:59 +0000] "POST /api/v1/auth/signup HTTP/1.1" 409 55 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:39:09 +0000] "POST /api/v1/auth/signup HTTP/1.1" 409 55 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [19/Mar/2024:15:39:47 +0000] "POST /api/v1/auth/signup HTTP/1.1" 201 95 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Mobile Safari/537.36"
+

@@ -901,3 +901,24 @@ error:
     method - GET 
     IP - ::1
    {"timestamp":"2024-02-09T15:22:03.340Z"}
+error: 
+    status - 500 
+    message - ValidationError: "phone" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T15:25:49.472Z"}
+error: 
+    status - 500 
+    message - ValidationError: "phone" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T15:26:43.459Z"}
+error: 
+    status - 500 
+    message - ValidationError: "phone" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T15:26:45.314Z"}

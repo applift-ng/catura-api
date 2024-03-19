@@ -39,6 +39,12 @@ class UserService {
     const data = await User.findById(_id);
     return data;
   };
+  public getUserByEmail = async (email: string): Promise<IUser> => {
+    const data = await User.findOne({
+      email
+    });
+    return data;
+  };
 }
 
 export default UserService;

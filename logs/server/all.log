@@ -1010,3 +1010,36 @@ info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T1
 info: Connected to the database. {"timestamp":"2024-02-09T15:22:21.588Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-02-09T15:22:27.825Z"}
 info: Connected to the database. {"timestamp":"2024-02-09T15:22:30.407Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-03-19T15:18:33.865Z"}
+info: Connected to the database. {"timestamp":"2024-03-19T15:18:39.876Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-03-19T15:21:17.333Z"}
+info: Connected to the database. {"timestamp":"2024-03-19T15:21:24.610Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-03-19T15:24:48.958Z"}
+info: Connected to the database. {"timestamp":"2024-03-19T15:24:55.198Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-03-19T15:25:24.392Z"}
+info: Connected to the database. {"timestamp":"2024-03-19T15:25:29.445Z"}
+error: 
+    status - 500 
+    message - ValidationError: "phone" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T15:25:49.472Z"}
+error: 
+    status - 500 
+    message - ValidationError: "phone" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T15:26:43.459Z"}
+error: 
+    status - 500 
+    message - ValidationError: "phone" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T15:26:45.314Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-03-19T15:31:23.305Z"}
+info: Connected to the database. {"timestamp":"2024-03-19T15:31:29.767Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-03-19T15:35:13.628Z"}
+info: Connected to the database. {"timestamp":"2024-03-19T15:35:21.112Z"}

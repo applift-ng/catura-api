@@ -1,1 +1,1 @@
-This is the API for Catura
+This is the Catura API repository here on Github

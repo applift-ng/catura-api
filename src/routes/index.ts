@@ -13,7 +13,7 @@ const routes = (): IRouter => {
   router.get('/', (req, res) => {
     res.json('Welcome');
   });
-  router.use('/auth', new GoogleAuthRoutes().getRoutes());
+  router.use('/google', new GoogleAuthRoutes().getRoutes());
   router.use('/auth', new userRoute().getRoutes());
   return router;
 };

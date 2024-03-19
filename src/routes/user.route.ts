@@ -22,7 +22,9 @@ class UserRoutes {
       this.UserValidator.newUser,
       this.UserController.newUser
     );
-    // this.router.post('/login', this.UserController.loginUser);
+
+    //router to login an existing user
+    this.router.post('/login', this.UserController.loginUser);
     //route to get a single user
     // this.router.get('/:_id', userAuth, this.UserController.getUser);
 

@@ -2,9 +2,12 @@
 import HttpStatus from 'http-status-codes';
 import userService from '../services/user.service';
 import { Request, Response, NextFunction } from 'express';
+import { compare } from 'bcrypt';
+import UserUtils from '../utils/user.util';
 
 class UserController {
   public UserService = new userService();
+  public UserUtils = new UserUtils();
 
   /**
    * Controller to get all users available
@@ -67,11 +70,14 @@ class UserController {
       console.log(req.body);
       const userExists = await this.UserService.getUserByEmail(req.body.email);
       if (!userExists) {
-        const data = await this.UserService.newUser(req.body);
+        const data = await this.UserService.newUser(
+          await this.UserUtils.hashPassword(req.body)
+        );
+        console.log(data);
         return res.status(HttpStatus.CREATED).json({
           code: HttpStatus.CREATED,
           data: {
-            userId: data.id
+            userId: data._id
           },
           message: 'User created successfully'
         });
@@ -82,12 +88,6 @@ class UserController {
           message: 'Email already in use'
         });
       }
-      // const data = await this.UserService.newUser(req.body);
-      // res.status(HttpStatus.CREATED).json({
-      //   code: HttpStatus.CREATED,
-      //   data: data,
-      //   message: 'User created successfully'
-      // });
     } catch (error) {
       next(error);
     }
@@ -133,6 +133,52 @@ class UserController {
         code: HttpStatus.OK,
         data: {},
         message: 'User deleted successfully'
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+  /**
+   * Controller to login a user
+   * @param {object} Request - request object
+   * @param {object} Response - response object
+   * @param {function} NextFunction
+   */
+  public loginUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<any> => {
+    try {
+      const userExists = await this.UserService.getUserByEmail(req.body.email);
+      if (userExists) {
+        const passwordCorrect = await compare(
+          req.body.password,
+          userExists.password
+        );
+        if (!passwordCorrect) {
+          return res.status(HttpStatus.BAD_REQUEST).json({
+            data: '',
+            message: 'Password is not correct',
+            code: HttpStatus.BAD_REQUEST
+          });
+        }
+        return res.status(HttpStatus.OK).json({
+          data: {
+            token: await this.UserUtils.signToken({
+              email: userExists.email,
+              userId: userExists._id,
+              role: userExists.role
+            })
+          },
+          message: 'Okay',
+          code: HttpStatus.OK
+        });
+      }
+      return res.status(HttpStatus.BAD_REQUEST).json({
+        data: '',
+        message: 'User doesnt exist',
+        code: HttpStatus.BAD_REQUEST
       });
     } catch (error) {
       next(error);

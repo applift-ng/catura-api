@@ -5,7 +5,8 @@ class UserValidator {
   public newUser = (req: Request, res: Response, next: NextFunction): void => {
     const schema = Joi.object({
       email: Joi.string().email().required(),
-      password: Joi.string().required()
+      password: Joi.string().required(),
+      role: Joi.string().required()
     });
     const { error } = schema.validate(req.body);
     if (error) {

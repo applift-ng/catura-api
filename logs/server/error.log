@@ -922,3 +922,97 @@ error:
     method - POST 
     IP - ::1
    {"timestamp":"2024-03-19T15:26:45.314Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7) 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T19:23:47.413Z"}
+error: Could not connect to the database. querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ETIMEOUT","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-03-19T19:23:57.117Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7) 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T19:26:51.641Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7) 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T19:27:06.827Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7) 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T19:27:28.003Z"}
+error: 
+    status - 500 
+    message - ValidationError: "role" is not allowed 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T20:16:57.238Z"}
+error: 
+    status - 500 
+    message - ValidationError: "role" must be a boolean 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T20:19:59.912Z"}
+error: 
+    status - 500 
+    message - ValidationError: "email" must be a valid email 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T20:22:51.956Z"}
+error: 
+    status - 500 
+    message - ValidationError: User validation failed: role: `business` is not a valid enum value for path `role`.
+    at model.Document.invalidate (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\document.js:2788:32)
+    at C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\document.js:2580:17
+    at C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\mongoose\lib\schematype.js:1273:9
+    at processTicksAndRejections (node:internal/process/task_queues:77:11) 
+    url - /api/v1/auth/signup 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T20:23:02.798Z"}
+error: Could not connect to the database. querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ETIMEOUT","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ETIMEOUT _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-03-19T20:25:46.893Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.demo.aoloa.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"querySrv","timestamp":"2024-03-19T20:47:37.849Z"}
+error: Could not connect to the database. queryTxt ETIMEOUT demo.aoloa.mongodb.net {"code":"ETIMEOUT","hostname":"demo.aoloa.mongodb.net","stack":"Error: queryTxt ETIMEOUT demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"queryTxt","timestamp":"2024-03-19T20:50:18.394Z"}
+error: Could not connect to the database. queryTxt ETIMEOUT demo.aoloa.mongodb.net {"code":"ETIMEOUT","hostname":"demo.aoloa.mongodb.net","stack":"Error: queryTxt ETIMEOUT demo.aoloa.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:47:19)","syscall":"queryTxt","timestamp":"2024-03-19T20:51:47.452Z"}
+error: 
+    status - 500 
+    message - Error: secretOrPrivateKey must have a value
+    at module.exports (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\node_modules\jsonwebtoken\sign.js:107:20)
+    at UserUtils.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\src\utils\user.util.ts:28:29)
+    at Generator.next (<anonymous>)
+    at C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\src\utils\user.util.ts:4:12)
+    at UserUtils.signToken (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\src\utils\user.util.ts:27:25)
+    at UserController.<anonymous> (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\src\controllers\user.controller.ts:168:41)
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\Administrator\Documents\my works\software development works\catura\catura-backend\src\controllers\user.controller.ts:5:58) 
+    url - /api/v1/auth/login 
+    method - POST 
+    IP - ::1
+   {"timestamp":"2024-03-19T20:55:13.612Z"}

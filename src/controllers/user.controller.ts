@@ -73,13 +73,17 @@ class UserController {
         const data = await this.UserService.newUser(
           await this.UserUtils.hashPassword(req.body)
         );
-        console.log(data);
-        return res.status(HttpStatus.CREATED).json({
-          code: HttpStatus.CREATED,
+        // console.log(data);
+        return res.status(HttpStatus.OK).json({
           data: {
-            userId: data._id
+            token: await this.UserUtils.signToken({
+              email: data.email,
+              userId: data._id,
+              role: data.role
+            })
           },
-          message: 'User created successfully'
+          message: 'User created successfully',
+          code: HttpStatus.OK
         });
       } else {
         return res.status(HttpStatus.CONFLICT).json({

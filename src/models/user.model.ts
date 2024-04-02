@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Schema, model } from 'mongoose';
 import { IUser } from '../interfaces/user.interface';
 

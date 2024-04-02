@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import HttpStatus from 'http-status-codes';
 import userService from '../services/user.service';
@@ -73,14 +74,17 @@ class UserController {
         const data = await this.UserService.newUser(
           await this.UserUtils.hashPassword(req.body)
         );
-        // console.log(data);
+        console.log(data);
         return res.status(HttpStatus.OK).json({
           data: {
             token: await this.UserUtils.signToken({
               email: data.email,
               userId: data._id,
               role: data.role
-            })
+            }),
+            role: data.role,
+            user: data._id,
+            email: data.email
           },
           message: 'User created successfully',
           code: HttpStatus.OK
@@ -173,7 +177,10 @@ class UserController {
               email: userExists.email,
               userId: userExists._id,
               role: userExists.role
-            })
+            }),
+            username: userExists.accountName,
+            email: userExists.email,
+            userId: userExists._id
           },
           message: 'Okay',
           code: HttpStatus.OK

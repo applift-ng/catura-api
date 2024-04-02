@@ -1,7 +1,9 @@
+/* eslint-disable prettier/prettier */
 import dotenv from 'dotenv';
 dotenv.config();
 
 import express, { Application } from 'express';
+// eslint-disable-next-line prettier/prettier
 import cors from 'cors';
 import helmet from 'helmet';
 // import passport from 'passport';

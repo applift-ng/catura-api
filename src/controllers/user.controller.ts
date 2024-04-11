@@ -5,10 +5,14 @@ import userService from '../services/user.service';
 import { Request, Response, NextFunction } from 'express';
 import { compare } from 'bcrypt';
 import UserUtils from '../utils/user.util';
+import GoogleAuth from '../config/googleauthconfig';
+import axios from 'axios';
+import { IUser } from '../interfaces/user.interface';
 
 class UserController {
   public UserService = new userService();
   public UserUtils = new UserUtils();
+  private client = new GoogleAuth();
 
   /**
    * Controller to get all users available
@@ -195,6 +199,77 @@ class UserController {
       next(error);
     }
   };
+
+   /**
+   * Controller to login/signup a user using google
+   * @param {object} Request - request object
+   * @param {object} Response - response object
+   * @param {function} NextFunction
+   */
+
+   public googleHandler = async (req: Request, res: Response): Promise<any> => {
+    // eslint-disable-next-line max-len
+    const redirect_url = `https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=${this.client.CLIENT_ID}&redirect_uri=${this.client.REDIRECT_URL}&scope=email%20profile&state=some_state`;
+    res.redirect(redirect_url);
+  }
+  /**
+   * Controller to handle google callback
+   * @param {object} Request - request object
+   * @param {object} Response - response object
+   * @param {function} NextFunction
+   */
+
+  public googleCallback = async (req: Request, res: Response): Promise<any> => {
+    try {
+      const code = req.query;
+      const { tokens } = await this.client.getToken(code);
+      const {data: googleData} = await
+      axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
+        headers: {
+          Authorization: `Bearer ${tokens.access_token}`
+        }
+      });
+     const userExists = await this.UserService.getUserByEmail(googleData.email);
+      if ( !userExists ) {
+        const data = await this.UserService.newUser({
+          email: googleData.email,
+          role: 'user',
+          accountName: '',
+          isGoogleUser: true,
+          isVerified: true
+        } as IUser);
+        console.log(data);
+        res.status(HttpStatus.OK).json({
+          data: {
+            token: await this.UserUtils.signToken({
+              email: data.email,
+              userId: data._id,
+              role: data.role
+            }),
+            role: data.role,
+            user: data._id,
+            email: data.email
+          },
+          message: 'User created successfully',
+          code: HttpStatus.OK
+        });
+        return res.redirect('http://localhost:3000/dashboard/home')
+      } else {
+        return res.status(HttpStatus.CONFLICT).json({
+          code: HttpStatus.CONFLICT,
+          data: '',
+          message: 'Email already in use'
+        });
+      }
+      } catch(error) {
+      console.error(error);
+      res.status(HttpStatus.CONFLICT).json({
+        code: HttpStatus.CONFLICT,
+        data: '',
+        message: 'An error encoutered'
+      })
+    }
+  }
 }
 
 export default UserController;

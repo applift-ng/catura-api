@@ -16,6 +16,8 @@ class UserUtils {
   public hashPassword = async (body: IBody): Promise<IUser> => {
     const data = {
       ...body,
+      isGoogleUser: false,
+      isVerified: false,
       password: await hash(body.password, 10)
     };
     return data as IUser;

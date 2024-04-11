@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import express, { IRouter } from 'express';
 import userController from '../controllers/user.controller';
 import userValidator from '../validators/user.validator';
@@ -23,6 +24,15 @@ class UserRoutes {
       this.UserController.newUser
     );
 
+    this.router.get(
+      '/google/signin',
+      this.UserController.googleHandler
+    );
+
+    this.router.get(
+      '/google/callback',
+      this.UserController.googleCallback
+    );
     //router to login an existing user
     this.router.post('/login', this.UserController.loginUser);
     //route to get a single user

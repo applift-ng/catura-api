@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import mongoose from 'mongoose';
 import Logger from './logger';
 

@@ -418,3 +418,17 @@ info: ::1 - - [03/Apr/2024:14:30:50 +0000] "POST /api/v1/auth/login HTTP/1.1" 20
 
 info: ::1 - - [03/Apr/2024:14:32:28 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 359 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
 
+info: ::1 - - [11/Apr/2024:10:44:40 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 96 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Apr/2024:10:46:17 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 359 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [11/Apr/2024:22:13:18 +0000] "GET /api/v1/google/signin HTTP/1.1" 404 47 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Apr/2024:22:13:19 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Apr/2024:22:14:46 +0000] "GET /api/v1/auth/google/signin HTTP/1.1" 302 360 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Apr/2024:22:17:27 +0000] "GET /api/v1/auth/google/signin HTTP/1.1" 302 360 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+
+info: ::1 - - [11/Apr/2024:22:21:10 +0000] "GET /api/v1/auth/google/signin HTTP/1.1" 302 360 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
+

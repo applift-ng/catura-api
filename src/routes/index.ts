@@ -3,7 +3,7 @@ import express, { IRouter } from 'express';
 const router = express.Router();
 
 import userRoute from './user.route';
-import GoogleAuthRoutes from './googleauth.route';
+// import GoogleAuthRoutes from './googleauth.route';
 
 /**
  * Function contains Application routes

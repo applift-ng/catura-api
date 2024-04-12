@@ -25,11 +25,6 @@ class UserRoutes {
     );
 
     this.router.get(
-      '/google/signin',
-      this.UserController.googleHandler
-    );
-
-    this.router.get(
       '/google/callback',
       this.UserController.googleCallback
     );

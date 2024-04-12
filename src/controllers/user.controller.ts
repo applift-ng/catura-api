@@ -200,18 +200,6 @@ class UserController {
     }
   };
 
-   /**
-   * Controller to login/signup a user using google
-   * @param {object} Request - request object
-   * @param {object} Response - response object
-   * @param {function} NextFunction
-   */
-
-   public googleHandler = async (req: Request, res: Response): Promise<any> => {
-    // eslint-disable-next-line max-len
-    const redirect_url = `https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=${this.client.CLIENT_ID}&redirect_uri=${this.client.REDIRECT_URL}&scope=email%20profile&state=some_state`;
-    res.redirect(redirect_url);
-  }
   /**
    * Controller to handle google callback
    * @param {object} Request - request object
@@ -222,7 +210,7 @@ class UserController {
   public googleCallback = async (req: Request, res: Response): Promise<any> => {
     try {
       const code = req.query;
-      const { tokens } = await this.client.getToken(code);
+      const { tokens } = await this.client.client.getToken(code);
       const {data: googleData} = await
       axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: {
@@ -254,12 +242,21 @@ class UserController {
           code: HttpStatus.OK
         });
         return res.redirect('http://localhost:3000/dashboard/home')
-      } else {
-        return res.status(HttpStatus.CONFLICT).json({
-          code: HttpStatus.CONFLICT,
-          data: '',
-          message: 'Email already in use'
+      } else if (userExists) {
+        // res.redirect('http://localhost:3000/dashboard/home')
+        const token = await this.UserUtils.signToken({
+          email: userExists.email,
+          userId: userExists._id,
+          role: userExists.role
+        })
+        res.cookie('jwt', token, {
+          httpOnly: true, //accessible only by web server
+          secure: true, //https
+          sameSite: false, //cross-site cookie
+          maxAge: 7 * 24 * 60 * 60 * 1000 //cookie expiry: set to match rT
         });
+        res.redirect('http://localhost:3000/dashboard/home')
+        // eslint-disable-next-line max-len
       }
       } catch(error) {
       console.error(error);

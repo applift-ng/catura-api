@@ -2,7 +2,7 @@
 import express, { IRouter } from 'express';
 import userController from '../controllers/user.controller';
 import userValidator from '../validators/user.validator';
-// import { userAuth } from '../middlewares/auth.middleware';
+import { userAuth } from '../middlewares/auth.middleware';
 
 class UserRoutes {
   private UserController = new userController();
@@ -31,7 +31,7 @@ class UserRoutes {
     //router to login an existing user
     this.router.post('/login', this.UserController.loginUser);
     //route to get a single user
-    // this.router.get('/:_id', userAuth, this.UserController.getUser);
+    this.router.get('/:id', userAuth, this.UserController.getUser);
 
     //route to update a single user
     // this.router.put('/:_id', this.UserController.updateUser);

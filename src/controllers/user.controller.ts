@@ -49,7 +49,7 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.getUser(req.params._id);
+      const data = await this.UserService.getUser(req.params.id);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -217,31 +217,25 @@ class UserController {
           Authorization: `Bearer ${tokens.access_token}`
         }
       });
+      console.log(googleData);
      const userExists = await this.UserService.getUserByEmail(googleData.email);
       if ( !userExists ) {
         const data = await this.UserService.newUser({
           email: googleData.email,
           role: 'user',
-          accountName: '',
+          accountName: googleData.name,
           isGoogleUser: true,
-          isVerified: true
+          isVerified: true,
+          password: '',
+          businessLogo: googleData.picture
         } as IUser);
-        console.log(data);
-        res.status(HttpStatus.OK).json({
-          data: {
-            token: await this.UserUtils.signToken({
-              email: data.email,
-              userId: data._id,
-              role: data.role
-            }),
-            role: data.role,
-            user: data._id,
-            email: data.email
-          },
-          message: 'User created successfully',
-          code: HttpStatus.OK
+        const token = await this.UserUtils.signToken({
+          email: data.email,
+          userId: data._id,
+          role: data.role
         });
-        return res.redirect('http://localhost:3000/dashboard/home')
+        // eslint-disable-next-line max-len
+        return res.redirect(`http://localhost:3000/dashboard/home/${data._id}/${token}`);
       } else if (userExists) {
         // res.redirect('http://localhost:3000/dashboard/home')
         const token = await this.UserUtils.signToken({
@@ -255,8 +249,8 @@ class UserController {
           sameSite: false, //cross-site cookie
           maxAge: 7 * 24 * 60 * 60 * 1000 //cookie expiry: set to match rT
         });
-        res.redirect('http://localhost:3000/dashboard/home')
-        // eslint-disable-next-line max-len
+         // eslint-disable-next-line max-len
+        res.redirect(`http://localhost:3000/dashboard/home/${userExists._id}/${token}`);
       }
       } catch(error) {
       console.error(error);

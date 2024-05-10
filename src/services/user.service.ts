@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import User from '../models/user.model';
 import { IUser } from '../interfaces/user.interface';
 
@@ -35,8 +36,8 @@ class UserService {
   };
 
   //get a single user
-  public getUser = async (_id: string): Promise<IUser> => {
-    const data = await User.findById(_id);
+  public getUser = async (id: string): Promise<IUser> => {
+    const data = await User.findById(id);
     return data;
   };
   public getUserByEmail = async (email: string): Promise<IUser> => {

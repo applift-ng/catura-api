@@ -1,8 +1,9 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import HttpStatus from 'http-status-codes';
-import jwt from 'jsonwebtoken';
 import { Request, Response, NextFunction } from 'express';
-
+import UserUtils from '../utils/user.util';
+const userUtils = new UserUtils();
 /**
  * Middleware to authenticate if user has a valid Authorization token
  * Authorization: Bearer <token>
@@ -25,7 +26,7 @@ export const userAuth = async (
       };
     bearerToken = bearerToken.split(' ')[1];
 
-    const { user }: any = await jwt.verify(bearerToken, 'your-secret-key');
+    const { user }: any = await userUtils.verifyToken(bearerToken);
     res.locals.user = user;
     res.locals.token = bearerToken;
     next();

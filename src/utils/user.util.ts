@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import { hash } from 'bcrypt';
-import { sign } from 'jsonwebtoken';
+import { sign, verify } from 'jsonwebtoken';
 import { IUser } from '../interfaces/user.interface';
 
 interface IBody {
@@ -38,6 +38,10 @@ class UserUtils {
     );
     return token;
   };
+  public verifyToken = async (token: string): Promise<IUser> => {
+    const user = await verify(token, this.JWT_SECRET);
+    return user as IUser;
+  }
 }
 
 export default UserUtils;

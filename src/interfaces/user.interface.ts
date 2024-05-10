@@ -8,5 +8,6 @@ export interface IUser extends Document {
   role: string;
   accountName: string;
   isGoogleUser: boolean;
-  isVerified: boolean
+  isVerified: boolean;
+  businessLogo: string;
 }

@@ -3,9 +3,9 @@ import {OAuth2Client} from 'google-auth-library';
 
 
 class GoogleAuth {
-    public CLIENT_ID;
-    public CLIENT_SECRET;
-    public REDIRECT_URL;
+    private CLIENT_ID: string;
+    private CLIENT_SECRET: string;
+    private REDIRECT_URL: string;
     public client;
     constructor () {
         this.CLIENT_ID = process.env.CLIENT_ID;

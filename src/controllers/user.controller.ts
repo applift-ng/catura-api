@@ -13,8 +13,13 @@ import IdGenerator from '../utils/userId.util';
 class UserController {
   public UserService = new userService();
   public UserUtils = new UserUtils();
-  private client = new GoogleAuth();
+  private client = new GoogleAuth().client;
   private idGenerate = new IdGenerator();
+  private redirectUrl: string;
+
+  constructor () {
+    this.redirectUrl = process.env.USER_REDIRECT_URL;
+  }
 
   /**
    * Controller to get all users available
@@ -213,7 +218,7 @@ class UserController {
   public googleCallback = async (req: Request, res: Response): Promise<any> => {
     try {
       const code = req.query;
-      const { tokens } = await this.client.client.getToken(code);
+      const { tokens } = await this.client.getToken(code);
       const {data: googleData} = await
       axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: {
@@ -238,7 +243,7 @@ class UserController {
           role: data.role
         });
         // eslint-disable-next-line max-len
-        return res.redirect(`http://localhost:3000/dashboard/home/${data._id}/${token}`);
+        return res.redirect(`${this.redirectUrl}/dashboard/home/${data._id}/${token}`);
       } else if (userExists) {
         // res.redirect('http://localhost:3000/dashboard/home')
         const token = await this.UserUtils.signToken({
@@ -253,7 +258,7 @@ class UserController {
           maxAge: 7 * 24 * 60 * 60 * 1000 //cookie expiry: set to match rT
         });
          // eslint-disable-next-line max-len
-        res.redirect(`http://localhost:3000/dashboard/home/${userExists._id}/${token}`);
+        res.redirect(`${this.redirectUrl}/dashboard/home/${userExists._id}/${token}`);
       }
       } catch(error) {
       // console.error(error);

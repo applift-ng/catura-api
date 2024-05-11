@@ -6,7 +6,8 @@ import { IOrder } from '../interfaces/order.interface';
 const orderSchema = new Schema({
     sender: {
         email: String,
-        location: Object
+        location: Object,
+        id: String
     },
     receiver: {
        email: {

@@ -33,6 +33,7 @@
     "mailgun-js": "^0.22.0",
     "mongoose": "^5.10.2",
     "morgan": "^1.10.0",
+    "nanoid": "^5.0.7",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "ts-node-dev": "^1.0.0-pre.62",

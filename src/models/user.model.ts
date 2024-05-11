@@ -26,6 +26,10 @@ const userSchema = new Schema(
     },
     businessLogo: {
       type: String
+    },
+    _id: {
+      type: String,
+      required: true
     }
   },
   {

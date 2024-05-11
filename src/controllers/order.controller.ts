@@ -10,7 +10,7 @@ import axios from 'axios';
 import { IUser } from '../interfaces/user.interface';
 import IdGenerator from '../utils/userId.util';
 
-class UserController {
+class OrderController {
   public UserService = new userService();
   public UserUtils = new UserUtils();
   private client = new GoogleAuth();
@@ -266,4 +266,4 @@ class UserController {
   }
 }
 
-export default UserController;
+export default OrderController;

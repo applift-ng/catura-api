@@ -16,8 +16,12 @@ class OrderService {
         });
         return orderData;
     };
-    public getOrders = async (): Promise<IOrder[]> => {
+    public getAllOrders = async (): Promise<IOrder[]> => {
         const data = await Order.find();
+        return data;
+    }
+    public getOrder = async (id: string): Promise<IOrder> => {
+        const data = await Order.findById(id);
         return data;
     }
 }

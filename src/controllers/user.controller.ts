@@ -86,7 +86,7 @@ class UserController {
         const data = await this.UserService.newUser(
           await this.UserUtils.hashPassword({...req.body, _id })
         );
-        // console.log(data);
+        console.log(data);
         return res.status(HttpStatus.OK).json({
           data: {
             token: await this.UserUtils.signToken({
@@ -216,10 +216,8 @@ class UserController {
    */
 
   public googleCallback = async (req: Request, res: Response): Promise<any> => {
-    // console.log('entered');
     try {
       const code = req.query;
-      console.log(code);
       const { tokens } = await this.client.getToken(code);
       const {data: googleData} = await
       axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
@@ -229,7 +227,6 @@ class UserController {
       });
       // console.log(googleData);
      const userExists = await this.UserService.getUserByEmail(googleData.email);
-     const _id = this.idGenerate.getId();
       if ( !userExists ) {
         const data = await this.UserService.newUser({
           email: googleData.email,
@@ -238,8 +235,7 @@ class UserController {
           isGoogleUser: true,
           isVerified: true,
           password: '',
-          businessLogo: googleData.picture,
-          _id
+          businessLogo: googleData.picture
         } as IUser);
         const token = await this.UserUtils.signToken({
           email: data.email,
@@ -247,7 +243,7 @@ class UserController {
           role: data.role
         });
         // eslint-disable-next-line max-len
-        return res.redirect(`${this.redirectUrl}/auth/login/${data._id}/${token}`);
+        return res.redirect(`${this.redirectUrl}/dashboard/home/${data._id}/${token}`);
       } else if (userExists) {
         // res.redirect('http://localhost:3000/dashboard/home')
         const token = await this.UserUtils.signToken({
@@ -262,10 +258,10 @@ class UserController {
           maxAge: 7 * 24 * 60 * 60 * 1000 //cookie expiry: set to match rT
         });
          // eslint-disable-next-line max-len
-        res.redirect(`${this.redirectUrl}/auth/login/${userExists._id}/${token}`);
+        res.redirect(`${this.redirectUrl}/dashboard/home/${userExists._id}/${token}`);
       }
       } catch(error) {
-      console.error(error);
+      // console.error(error);
       res.status(HttpStatus.CONFLICT).json({
         code: HttpStatus.CONFLICT,
         data: '',

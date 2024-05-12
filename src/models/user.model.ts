@@ -27,6 +27,12 @@ const userSchema = new Schema(
     businessLogo: {
       type: String
     },
+    isVerified: {
+      type: Boolean
+    },
+    isGoogleUser: {
+      type: Boolean
+    },
     _id: {
       type: String,
       required: true

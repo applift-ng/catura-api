@@ -246,7 +246,7 @@ class UserController {
           role: data.role
         });
         // eslint-disable-next-line max-len
-        return res.redirect(`${this.redirectUrl}/dashboard/home/${data._id}/${token}`);
+        return res.redirect(`${this.redirectUrl}/auth/login/${data._id}/${token}`);
       } else if (userExists) {
         // res.redirect('http://localhost:3000/dashboard/home')
         const token = await this.UserUtils.signToken({
@@ -261,7 +261,7 @@ class UserController {
           maxAge: 7 * 24 * 60 * 60 * 1000 //cookie expiry: set to match rT
         });
          // eslint-disable-next-line max-len
-        res.redirect(`${this.redirectUrl}/dashboard/home/${userExists._id}/${token}`);
+        res.redirect(`${this.redirectUrl}/auth/login/${userExists._id}/${token}`);
       }
       } catch(error) {
       // console.error(error);

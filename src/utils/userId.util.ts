@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
-import { nanoid } from 'nanoid';
+import crypto from 'crypto'
 class IdGenerator {
   public getId = (): string => {
-    const id = nanoid();
+    const id = crypto.randomUUID();
     return id;
   };
 }

@@ -216,6 +216,7 @@ class UserController {
    */
 
   public googleCallback = async (req: Request, res: Response): Promise<any> => {
+    // console.log('entered');
     try {
       const code = req.query;
       const { tokens } = await this.client.getToken(code);
@@ -227,6 +228,7 @@ class UserController {
       });
       // console.log(googleData);
      const userExists = await this.UserService.getUserByEmail(googleData.email);
+     const _id = this.idGenerate.getId();
       if ( !userExists ) {
         const data = await this.UserService.newUser({
           email: googleData.email,
@@ -235,7 +237,8 @@ class UserController {
           isGoogleUser: true,
           isVerified: true,
           password: '',
-          businessLogo: googleData.picture
+          businessLogo: googleData.picture,
+          _id
         } as IUser);
         const token = await this.UserUtils.signToken({
           email: data.email,

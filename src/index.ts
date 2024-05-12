@@ -51,8 +51,6 @@ class App {
         cookie: { secure: true }
       })
     );
-    // this.app.use(passport.initialize());
-    // this.app.use(passport.session());
     this.app.use(cors());
     this.app.use(helmet());
     this.app.use(express.urlencoded({ extended: true }));

@@ -264,7 +264,7 @@ class UserController {
         res.redirect(`${this.redirectUrl}/auth/login/${userExists._id}/${token}`);
       }
       } catch(error) {
-      // console.error(error);
+      console.error(error);
       res.status(HttpStatus.CONFLICT).json({
         code: HttpStatus.CONFLICT,
         data: '',

@@ -86,7 +86,7 @@ class UserController {
         const data = await this.UserService.newUser(
           await this.UserUtils.hashPassword({...req.body, _id })
         );
-        console.log(data);
+        // console.log(data);
         return res.status(HttpStatus.OK).json({
           data: {
             token: await this.UserUtils.signToken({
@@ -219,6 +219,7 @@ class UserController {
     // console.log('entered');
     try {
       const code = req.query;
+      console.log(code);
       const { tokens } = await this.client.getToken(code);
       const {data: googleData} = await
       axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {

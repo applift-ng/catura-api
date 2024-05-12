@@ -37,7 +37,9 @@ class UserService {
 
   //get a single user
   public getUser = async (id: string): Promise<IUser> => {
+    // console.log(id);
     const data = await User.findById(id);
+    // console.log(data);
     return data;
   };
   public getUserByEmail = async (email: string): Promise<IUser> => {

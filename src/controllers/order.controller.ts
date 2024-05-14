@@ -19,6 +19,7 @@ class OrderController {
     req: Request,
     res: Response,
     next: NextFunction
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): Promise<any> => {
     try {
       const data = await this.Orderservice.getAllOrders();

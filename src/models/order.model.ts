@@ -17,11 +17,15 @@ const orderSchema = new Schema({
         type: String
        },
        location: {
-        type: Object
+        type: Object,
+        required: true
        }
     },
     price: {
         type: Number
+    },
+    pkgDescription: {
+        type: String
     },
     status: {
         required: true,

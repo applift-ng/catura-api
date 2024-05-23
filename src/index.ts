@@ -1,21 +1,20 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable max-len */
 import dotenv from 'dotenv';
 dotenv.config();
-
 import express, { Application } from 'express';
-// eslint-disable-next-line prettier/prettier
 import cors from 'cors';
 import helmet from 'helmet';
-// import passport from 'passport';
-
 import routes from './routes';
 import Database from './config/database';
 import ErrorHandler from './middlewares/error.middleware';
 import Logger from './config/logger';
 import morgan from 'morgan';
-// import PassPort from './config/passport';
 import session from 'express-session';
-
+import * as appServer from 'http';
+import { Server } from 'socket.io';
+import socketActions from './utils/socket.io';
+import {ServerToClientEvents, ClientToServerEvents, InterServerEvents, SocketData} from '../src/interfaces/socket.interface';
 class App {
   public app: Application;
   public host: string | number;
@@ -27,18 +26,22 @@ class App {
   private logStream = Logger.logStream;
   private logger = Logger.logger;
   public errorHandler = new ErrorHandler();
-
+  public httpServer: appServer.Server;
+  public io;
+  // eslint-disable-next-line max-len
   constructor() {
     this.app = express();
     this.host = process.env.APP_HOST;
     this.port = process.env.APP_PORT;
     this.api_version = process.env.API_VERSION;
+    this.httpServer = appServer.createServer(this.app);
 
     this.initializeMiddleWares();
     this.initializeRoutes();
     // this.initializePassport();
     this.initializeDatabase();
     this.initializeErrorHandlers();
+    this.initializeSocket();
     this.startApp();
   }
 
@@ -73,12 +76,20 @@ class App {
     this.app.use(this.errorHandler.genericErrorHandler);
     this.app.use(this.errorHandler.notFound);
   }
-
+  public initializeSocket(): void {
+    this.io = new Server<ServerToClientEvents, ClientToServerEvents, InterServerEvents, SocketData>(this.httpServer);
+    new socketActions(this.io);
+  }
   public startApp(): void {
-    this.app.listen(this.port, () => {
+    // this.app.listen(this.port, () => {
+    //   this.logger.info(
+    //     `Server started at ${this.host}:${this.port}/api/${this.api_version}/`
+    //   );
+    // });
+    this.httpServer.listen(this.port, () => {
       this.logger.info(
         `Server started at ${this.host}:${this.port}/api/${this.api_version}/`
-      );
+      )
     });
   }
 

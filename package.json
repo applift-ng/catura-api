@@ -35,6 +35,7 @@
     "morgan": "^1.10.0",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
+    "socket.io": "^4.7.5",
     "ts-node-dev": "^1.0.0-pre.62",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.0"

@@ -18,7 +18,6 @@ const orderSchema = new Schema({
        },
        location: {
         type: Object,
-        required: true
        }
     },
     price: {
@@ -30,7 +29,11 @@ const orderSchema = new Schema({
     status: {
         required: true,
         type: String,
-        enum: ['complete', 'inprogress', 'initiated']
+        enum: ['complete', 'inprogress', 'initiated', 'filled']
+    },
+    _id: {
+        type: String,
+        required: true
     }
 }, {timestamps: true});
 

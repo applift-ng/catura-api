@@ -6808,3 +6808,255 @@ info: ::1 - - [14/May/2024:20:17:16 +0000] "POST /api/v1/orders HTTP/1.1" 500 48
 
 info: ::1 - - [14/May/2024:20:17:16 +0000] "POST /api/v1/orders HTTP/1.1" 500 48 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
 
+info: ::1 - - [18/May/2024:08:18:52 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYfuT99BMIhd_V2z5G3b0Co8Mig15VnmwpC-_eEyvILJMdmNfb20kE0O8ihuDvEpcg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:18:59 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:08:19:02 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:02 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:15 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:16 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:16 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:16 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:17 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:17 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:17 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:17 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:18 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:18 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:18 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:19 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:19 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:19 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:19 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:20 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:20 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:21 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:21 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:21 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:22 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:22 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:22 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:08:19:22 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:09:47:59 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYcQ9Gno8E284bCgpAuMPOlFA0DB2kO7vxpPd2E5QDgEbPhDkOb1vPHHNuP-pO7M3A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:09:48:01 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:09:48:02 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:09:48:02 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:10:29:04 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYfdmVYawrYRBVuv8aXLDOVvdw1WXlo8ICTSn5yK055G1uEk4JIoWLYenfV48sfCww&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [18/May/2024:10:29:09 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:10:29:11 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [18/May/2024:10:29:12 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [18/May/2024:10:29:19 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [18/May/2024:10:29:19 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:27:43 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYd3kTV0EWpdAPEy3wEzrvAE4p1UT8H0QOwxhAb0VqygWL-6NDJUt_0fNtGu4cPg3A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:27:44 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:12:27:46 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:27:46 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:47:54 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYcCeWvC5bQpEH-yDYem5GgWi4v-sZm7ZshmMXd7ZsizFEwMXE8kNGOP7VxcOtIInQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:47:54 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:12:47:55 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:47:55 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:47:56 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:12:47:56 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:14:57:40 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYfmjQsIc_TrW80ZUSjEv0ZLrX3opsBBfmcB3GN2rfDwjh3V7CLzaewetPQxOUboIg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:14:57:42 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:14:57:43 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:14:57:43 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:14:57:45 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:14:57:45 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:19:40:39 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYdXaXnwKXjIWjqQ1EapsEjHKSfo3P4wd6q3Lsy0wQVzvFf-xsdoqW55zDXZzj1ItQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:19:40:57 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:19:41:01 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:19:41:02 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:21:32:48 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYeFa4Hzifb472r7qy7v1bjynTWO9r4mD-DQq58cbyJN150QNJf94SwBCrNdQwJQYQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:21:32:56 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [18/May/2024:21:33:00 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:21:33:01 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:21:33:12 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [18/May/2024:21:33:14 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:00 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYdQssW023BzhHLNug3LpwSkjMgWaHkuoKWew-RUZUWwluJxk_jre-mCJUQfZOt9Jw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:07 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [19/May/2024:19:09:09 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:09 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:18 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:18 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:24 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:19:09:25 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:21:44:05 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYfbDSAqtY6ahp6QDzeT7lo_ficmGi-TlBZFNkiEXH65FF7PF7IWzUH6h2271vXvQg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:21:44:06 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [19/May/2024:21:44:10 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [19/May/2024:21:44:13 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:12:50 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYfiPuXjnDtRpI7Qz0FLndysSen0CNko2h_fdvXswJMRP7AzvIe2FPy8--AIcR0s-g&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:12:55 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:11:12:57 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:12:57 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:13:07 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:13:07 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:30:52 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYcTJwMnBUoADN1bAfGWCwlb_32pavV2PVBz40V7g8S_LsQzJmxzSXC_lewjEyVyGg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:30:53 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:11:30:56 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:30:56 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:36:39 +0000] "POST /api/v1/order HTTP/1.1" 500 48 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:38:43 +0000] "POST /api/v1/order HTTP/1.1" 500 152 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:39:18 +0000] "POST /api/v1/order HTTP/1.1" 500 152 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:40:25 +0000] "POST /api/v1/order HTTP/1.1" 201 326 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:47:55 +0000] "POST /api/v1/order HTTP/1.1" 201 326 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:48:07 +0000] "POST /api/v1/order HTTP/1.1" 201 326 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:50:08 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYcQtdrsl6waGXepDA2pCiUI21i1ZzFo1hhwivjqB850N0e9hSpCKDtJErgvaFH7Dw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:50:09 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:11:50:11 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:50:12 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:50:31 +0000] "POST /api/v1/order HTTP/1.1" 201 327 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:50:39 +0000] "POST /api/v1/order HTTP/1.1" 400 67 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:11:58:07 +0000] "GET /api/v1/orders/ HTTP/1.1" 404 47 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:07:05 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYcqYD6Q0rDbmP17GSSNask3VviRdr_MsIgAcMLa9EvtuOXrljAj_6k7Bkpn-l7FEA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none HTTP/1.1" 409 54 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:07:06 +0000] "GET /favicon.ico HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:09:09 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYfyWGExfSrWZbhdDUendmdA5f5gImm0K-5Hn30k4iDAchFV7A00WHtaWBFMaby5-w&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:09:11 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:12:09:11 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:09:13 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:09:13 +0000] "GET /api/v1/order/[object%20Object] HTTP/1.1" 400 56 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:11:04 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYeJntWq0VIdhbvru8FJ7cgGZj5-nz5LZU3rsOwZZjTBtv-9lXzKIo6lxU0jA6-IYQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:11:05 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:12:11:07 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:11:08 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:11:10 +0000] "GET /api/v1/order/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 60 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:12:53 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYcRYlMjKvE1tTs2mfDDpKN6tCw-nOkEyIcspodIq134UhN6ke4DRaO88z3EtMeEXw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:12:54 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:12:12:57 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:12:58 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:13:00 +0000] "GET /api/v1/order/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 1176 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:16:33 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYdHDPgzXpnQ9IDFP3oGv-p1i1ynrTs-RYse25FBo9i3GX8nAvI-Qvzq3LpTY_zYwg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:16:34 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:12:16:35 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:16:36 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:16:39 +0000] "GET /api/v1/order/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:19:11 +0000] "GET /api/v1/auth/google/callback?state=some_state&code=4%2F0AdLIrYc7SkP3lzVB6ou7oOd2k1HmnvlSXgld8pcLMpINIi4i3v_TGy2IskRUfeqs7VhrHw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none HTTP/1.1" 302 688 "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:19:12 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 392 "-" "node"
+
+info: ::1 - - [23/May/2024:12:19:14 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:19:14 +0000] "GET /api/v1/auth/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+
+info: ::1 - - [23/May/2024:12:19:16 +0000] "GET /api/v1/order/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36"
+

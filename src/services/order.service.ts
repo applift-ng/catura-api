@@ -10,9 +10,9 @@ class OrderService {
     }
     // create new order
     // eslint-disable-next-line max-len
-    public createOrder = async (id: string, data: IOrder): Promise<IOrder> => {
+    public createOrder = async (data: IOrder): Promise<IOrder> => {
         const orderData = await Order.create({
-            _id: id, ...data
+            ...data
         });
         return orderData;
     };

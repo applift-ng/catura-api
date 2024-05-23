@@ -17,7 +17,7 @@ const routes = (): IRouter => {
   });
   // router.use('/google', new GoogleAuthRoutes().getRoutes());
   router.use('/auth', new userRoute().getRoutes());
-  router.use('/orders', new OrderRoutes().getRoutes());
+  router.use('/order', new OrderRoutes().getRoutes());
   return router;
 };
 

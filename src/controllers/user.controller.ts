@@ -87,20 +87,13 @@ class UserController {
           await this.UserUtils.hashPassword({...req.body, _id })
         );
         console.log(data);
-        return res.status(HttpStatus.OK).json({
-          data: {
-            token: await this.UserUtils.signToken({
-              email: data.email,
-              userId: data._id,
-              role: data.role
-            }),
-            role: data.role,
-            user: data._id,
-            email: data.email
-          },
-          message: 'User created successfully',
-          code: HttpStatus.OK
+        const token = await this.UserUtils.signToken({
+          email: data.email,
+          userId: data._id,
+          role: data.role
         });
+        return res.redirect(
+          `${this.redirectUrl}/auth/login/${data._id}/${token}`);
       } else {
         return res.status(HttpStatus.CONFLICT).json({
           code: HttpStatus.CONFLICT,
@@ -183,24 +176,17 @@ class UserController {
             code: HttpStatus.BAD_REQUEST
           });
         }
-        return res.status(HttpStatus.OK).json({
-          data: {
-            token: await this.UserUtils.signToken({
-              email: userExists.email,
-              userId: userExists._id,
-              role: userExists.role
-            }),
-            username: userExists.accountName,
-            email: userExists.email,
-            userId: userExists._id
-          },
-          message: 'Okay',
-          code: HttpStatus.OK
+        const token = await this.UserUtils.signToken({
+          email: userExists.email,
+          userId: userExists._id,
+          role: userExists.role
         });
+        return res.redirect(
+          `${this.redirectUrl}/auth/login/${userExists._id}/${token}`);
       }
       return res.status(HttpStatus.BAD_REQUEST).json({
         data: '',
-        message: 'User doesnt exist',
+        message: 'User doesnt exist, sign up',
         code: HttpStatus.BAD_REQUEST
       });
     } catch (error) {

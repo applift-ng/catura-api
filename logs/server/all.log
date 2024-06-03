@@ -16943,3 +16943,804 @@ error:
      {"timestamp":"2024-05-23T12:09:13.696Z"}
 info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-05-23T12:12:28.465Z"}
 info: Connected to the database. {"timestamp":"2024-05-23T12:12:42.044Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-05-23T16:57:50.018Z"}
+info: Connected to the database. {"timestamp":"2024-05-23T16:57:54.500Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:18:24.854Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:18:33.025Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:18:51.149Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:19:00.706Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:19:13.767Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:19:16.959Z"}
+error: 
+    status - 500 
+    message - JsonWebTokenError: jwt must be provided
+    at module.exports (C:\Users\USER\Documents\software\catura\catura-api\node_modules\jsonwebtoken\verify.js:53:17)
+    at UserUtils.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:42:30)
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:4:12)
+    at UserUtils.verifyToken (C:\Users\USER\Documents\software\catura\catura-api\src\utils\user.util.ts:41:64)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:29:43
+    at Generator.next (<anonymous>)
+    at C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:4:12)
+    at userAuth (C:\Users\USER\Documents\software\catura\catura-api\src\middlewares\auth.middleware.ts:19:20)
+    at Layer.handle [as handle_request] (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\USER\Documents\software\catura\catura-api\node_modules\express\lib\router\route.js:114:3) 
+    url - /api/v1/order/undefined 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-05-23T17:19:39.632Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-01T11:47:35.017Z"}
+info: Connected to the database. {"timestamp":"2024-06-01T11:47:37.849Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-01T21:46:27.803Z"}
+info: Connected to the database. {"timestamp":"2024-06-01T21:46:32.115Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T18:15:03.758Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T18:15:09.698Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T19:55:24.458Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T19:55:26.942Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T20:29:36.814Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T20:29:39.162Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:32:43.502Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:09.955Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:34.426Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:34.455Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:34.842Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:34.878Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:34.891Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:33:35.089Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:34:44.928Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:34:44.959Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:34:44.978Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:34:44.998Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:34:45.254Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:34:45.354Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:29.816Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:29.989Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:38.599Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:38.629Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:38.659Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:38.762Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:39.038Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:44:39.079Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:49:46.033Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:49:46.257Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:50:19.612Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:50:19.623Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:50:19.873Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:51:38.325Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:51:38.611Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:51:49.445Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:51:49.821Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:52:36.155Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:52:36.375Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:55:14.522Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:55:15.239Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:56:46.294Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:56:46.507Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:57:00.091Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:57:00.578Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:57:42.361Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:57:42.499Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:57:52.889Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:57:52.968Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:58:17.373Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:58:17.415Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:59:08.714Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T20:59:08.883Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:17.619Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:17.627Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:17.777Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:27.096Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:27.103Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:27.215Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:35.207Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:35.217Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:35.367Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:51.280Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:51.290Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:00:51.491Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:01:38.978Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:01:39.117Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:01:44.906Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:01:44.924Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:02:00.491Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:02:00.534Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:03:26.952Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:03:26.972Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:03:27.111Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:04:04.778Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:04:04.786Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:04:05.033Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:04:37.733Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:04:37.743Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:04:37.913Z"}
+error: 
+      status - 400
+      message - Authorization token is required 
+      url - /api/v1/order/fjm-sqah-hbsb 
+      method - GET 
+      IP - ::1
+     {"timestamp":"2024-06-02T21:20:08.216Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T21:25:10.343Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T21:25:15.798Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T21:25:46.496Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T21:25:49.578Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T22:20:09.339Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T22:20:11.987Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T22:31:26.933Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T22:31:28.958Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T23:40:12.356Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T23:40:14.797Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T23:46:30.350Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T23:46:32.620Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-02T23:54:58.256Z"}
+info: Connected to the database. {"timestamp":"2024-06-02T23:55:01.020Z"}
+error: 
+    status - 500 
+    message - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\model.js:5095:32)
+    at C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4510:21
+    at C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at model.Query.exec (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4509:10)
+    at model.Query.Query.then (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/order/xwq-eoae-qgge 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-06-03T00:37:05.328Z"}
+error: 
+    status - 500 
+    message - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\model.js:5095:32)
+    at C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4510:21
+    at C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at model.Query.exec (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4509:10)
+    at model.Query.Query.then (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/order/xwq-eoae-qgge 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-06-03T01:25:00.031Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T01:26:41.088Z"}
+error: Could not connect to the database. Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ {"reason":{"commonWireVersion":null,"compatibilityError":null,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":null,"stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n    at NativeConnection.Connection.openUri (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\connection.js:847:32)\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Database.<anonymous> (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:21:22)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:4:12)\n    at Database.initializeDatabase (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:19:57)\n    at App.initializeDatabase (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:65:13)\n    at new App (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:42:10)\n    at Object.<anonymous> (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:101:13)","timestamp":"2024-06-03T01:27:11.942Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T01:34:56.862Z"}
+error: Could not connect to the database. querySrv ECONNREFUSED _mongodb._tcp.catura-cluster.1kmyjsj.mongodb.net {"code":"ECONNREFUSED","hostname":"_mongodb._tcp.catura-cluster.1kmyjsj.mongodb.net","stack":"Error: querySrv ECONNREFUSED _mongodb._tcp.catura-cluster.1kmyjsj.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/callback_resolver:45:19)","syscall":"querySrv","timestamp":"2024-06-03T01:34:56.894Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T01:45:57.947Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T01:46:03.756Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:14:04.492Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T02:14:08.028Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:14:35.356Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T02:14:37.371Z"}
+error: 
+    status - 500 
+    message - MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/
+    at Function.Model.$wrapCallback (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\model.js:5095:32)
+    at C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4510:21
+    at C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\helpers\promiseOrCallback.js:31:10)
+    at model.Query.exec (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4509:10)
+    at model.Query.Query.then (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\query.js:4592:15)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) 
+    url - /api/v1/order/xwq-eoae-qgge 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-06-03T02:17:33.415Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:21:44.298Z"}
+error: Could not connect to the database. Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ {"reason":{"commonWireVersion":null,"compatibilityError":null,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":null,"stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n    at NativeConnection.Connection.openUri (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\connection.js:847:32)\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Database.<anonymous> (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:21:22)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:4:12)\n    at Database.initializeDatabase (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:19:57)\n    at App.initializeDatabase (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:65:13)\n    at new App (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:42:10)\n    at Object.<anonymous> (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:101:13)","timestamp":"2024-06-03T02:22:14.730Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `orders.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7) 
+    url - /api/v1/order/xwq-eoae-qgge 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-06-03T02:24:01.693Z"}
+error: 
+    status - 500 
+    message - MongooseError: Operation `orders.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\USER\Documents\software\catura\catura-api\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:198:23)
+    at listOnTimeout (node:internal/timers:573:17)
+    at processTimers (node:internal/timers:514:7) 
+    url - /api/v1/order/xwq-eoae-qgge 
+    method - GET 
+    IP - ::1
+   {"timestamp":"2024-06-03T02:24:46.902Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:25:34.478Z"}
+error: Could not connect to the database. Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/ {"reason":{"commonWireVersion":null,"compatibilityError":null,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":null,"stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://docs.atlas.mongodb.com/security-whitelist/\n    at NativeConnection.Connection.openUri (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\connection.js:847:32)\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:351:10\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:32:5\n    at new Promise (<anonymous>)\n    at promiseOrCallback (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\helpers\\promiseOrCallback.js:31:10)\n    at Mongoose._promiseOrCallback (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:1149:10)\n    at Mongoose.connect (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\node_modules\\mongoose\\lib\\index.js:350:20)\n    at Database.<anonymous> (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:21:22)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:4:12)\n    at Database.initializeDatabase (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\config\\database.ts:19:57)\n    at App.initializeDatabase (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:65:13)\n    at new App (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:42:10)\n    at Object.<anonymous> (C:\\Users\\USER\\Documents\\software\\catura\\catura-api\\src\\index.ts:101:13)","timestamp":"2024-06-03T02:26:05.249Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:29:18.833Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T02:29:23.228Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:48:30.777Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T02:48:33.606Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:50:24.476Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T02:50:28.641Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T02:51:29.737Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T02:51:34.058Z"}
+info: Server started at http://localhost:4000/api/v1/ {"timestamp":"2024-06-03T03:00:12.135Z"}
+info: Connected to the database. {"timestamp":"2024-06-03T03:00:14.106Z"}

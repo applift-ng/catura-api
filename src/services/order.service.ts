@@ -24,5 +24,9 @@ class OrderService {
         const data = await Order.findById(id);
         return data;
     }
+    public updateOrder = async (id: string, body: IOrder): Promise<IOrder> => {
+        const data = await Order.findByIdAndUpdate(id, body, {new: true});
+        return data;
+    }
 }
 export default OrderService;

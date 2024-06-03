@@ -7,7 +7,8 @@ const orderSchema = new Schema({
     sender: {
         email: String,
         location: Object,
-        id: String
+        id: String,
+        businessName: String
     },
     receiver: {
        email: {

@@ -46,11 +46,12 @@ class OrderController {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ): Promise<any> => {
     try {
-      const data = await this.Orderservice.getOrder(req.params.id);
+      const data = await this.Orderservice.getOrder(req.params.orderId);
+      console.log(data);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
-        message: 'User fetched successfully'
+        message: 'Order fetched successfully'
       });
     } catch (error) {
       next(error);
@@ -89,7 +90,7 @@ class OrderController {
   };
 
    /**
-   * Controller to get a user
+   * Controller to get an order by the user that ordered it
    * @param  {object} Request - request object
    * @param {object} Response - response object
    * @param {Function} NextFunction
@@ -111,7 +112,29 @@ class OrderController {
       next(error);
     }
   };
-
+  /**
+   * Controller to update an order's details
+   * @param  {object} Request - request object
+   * @param {object} Response - response object
+   * @param {Function} NextFunction
+   */
+  public patchOrder = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ): Promise<any> => {
+    try {
+      const data = await this.Orderservice.updateOrder(req.params.orderId, req.body);
+      return res.status(HttpStatus.OK).json({
+        code: HttpStatus.OK,
+        data: data,
+        message: 'User fetched successfully'
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 
 export default OrderController;

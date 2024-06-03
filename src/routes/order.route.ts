@@ -11,12 +11,12 @@ class OrderRoute {
     }
     private routes = () => {
         //router to get all orders by a user
-        this.router.get('/:userId',
+        this.router.get('/user/:userId',
         userAuth, this.orderController.getAllOrdersByUserId);
         //router to create an order by a user
         this.router.post('', userAuth, this.orderController.newOrder);
         //router to update an order by a user
-        this.router.patch('/:orderId', userAuth);
+        this.router.patch('/:orderId', this.orderController.patchOrder);
         //router to delete an order by a user
         this.router.delete('/:orderId', userAuth);
         //router to get an order

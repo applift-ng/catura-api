@@ -1,18 +1,18 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import HttpStatus from 'http-status-codes';
-import userService from '../services/user.service';
+import moverService from '../services/mover.service';
 import { Request, Response, NextFunction } from 'express';
 import { compare } from 'bcrypt';
-import UserUtils from '../utils/user.util';
+import MoverUtils from '../utils/mover.util';
 import GoogleAuth from '../config/googleauthconfig';
 import axios from 'axios';
-import { IUser } from '../interfaces/user.interface';
+import { IMover } from '../interfaces/mover.interface';
 import IdGenerator from '../utils/userId.util';
 
 class UserController {
-  public UserService = new userService();
-  public UserUtils = new UserUtils();
+  public MoverService = new moverService();
+  public MoverUtils = new MoverUtils();
   private client = new GoogleAuth().client;
   private idGenerate = new IdGenerator();
   private redirectUrl: string;
@@ -27,13 +27,13 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public getAllUsers = async (
+  public getAllMovers = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.getAllUsers();
+      const data = await this.MoverService.getAllMovers();
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -56,7 +56,7 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.getUser(req.params.id);
+      const data = await this.MoverService.getMover(req.params.id);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -80,21 +80,20 @@ class UserController {
   ): Promise<any> => {
     try {
       console.log(req.body);
-      const userExists = await this.UserService.getUserByEmail(req.body.email);
+      const userExists =
+        await this.MoverService.getMoverByEmail(req.body.email);
       if (!userExists) {
         const _id = this.idGenerate.getId();
-        const data = await this.UserService.newUser(
-          await this.UserUtils.hashPassword({...req.body, _id })
+        const data = await this.MoverService.newMover(
+          await this.MoverUtils.hashPassword({...req.body, _id })
         );
         console.log(data);
         return res.status(HttpStatus.OK).json({
           data: {
-            token: await this.UserUtils.signToken({
+            token: await this.MoverUtils.signToken({
               email: data.email,
-              userId: data._id,
-              role: data.role
+              moverId: data._id,
             }),
-            role: data.role,
             user: data._id,
             email: data.email
           },
@@ -125,7 +124,8 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      const data = await this.UserService.updateUser(req.params._id, req.body);
+      const data =
+        await this.MoverService.updateMover(req.params._id, req.body);
       res.status(HttpStatus.ACCEPTED).json({
         code: HttpStatus.ACCEPTED,
         data: data,
@@ -148,7 +148,7 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      await this.UserService.deleteUser(req.params._id);
+      await this.MoverService.deleteMover(req.params._id);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: {},
@@ -170,7 +170,8 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      const userExists = await this.UserService.getUserByEmail(req.body.email);
+      const userExists =
+        await this.MoverService.getMoverByEmail(req.body.email);
       if (userExists) {
         const passwordCorrect = await compare(
           req.body.password,
@@ -185,16 +186,13 @@ class UserController {
         }
         return res.status(HttpStatus.OK).json({
           data: {
-            token: await this.UserUtils.signToken({
+            token: await this.MoverUtils.signToken({
               email: userExists.email,
-              userId: userExists._id,
-              role: userExists.role
+              moverId: userExists._id,
             }),
             accountName: userExists.accountName,
             email: userExists.email,
             userId: userExists._id,
-            role: userExists.role,
-            businessLogo: userExists.businessLogo
           },
           message: 'Okay',
           code: HttpStatus.OK
@@ -228,30 +226,28 @@ class UserController {
         }
       });
       // console.log(googleData);
-     const userExists = await this.UserService.getUserByEmail(googleData.email);
+     const userExists =
+        await this.MoverService.getMoverByEmail(googleData.email);
       if ( !userExists ) {
-        const data = await this.UserService.newUser({
+        const data =
+            await this.MoverService.newMover({
           email: googleData.email,
-          role: 'user',
           accountName: googleData.name,
           isGoogleUser: true,
           isVerified: true,
           password: '',
-          businessLogo: googleData.picture
-        } as IUser);
-        const token = await this.UserUtils.signToken({
+        } as IMover);
+        const token = await this.MoverUtils.signToken({
           email: data.email,
-          userId: data._id,
-          role: data.role
+        moverId: data._id,
         });
         // eslint-disable-next-line max-len
         return res.redirect(`${this.redirectUrl}/auth/login/${data._id}/${token}`);
       } else if (userExists) {
         // res.redirect('http://localhost:3000/dashboard/home')
-        const token = await this.UserUtils.signToken({
+        const token = await this.MoverUtils.signToken({
           email: userExists.email,
-          userId: userExists._id,
-          role: userExists.role
+          moverId: userExists._id,
         })
         res.cookie('jwt', token, {
           httpOnly: true, //accessible only by web server

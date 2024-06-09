@@ -47,7 +47,7 @@ class OrderController {
   ): Promise<any> => {
     try {
       const data = await this.Orderservice.getOrder(req.params.orderId);
-      console.log(data);
+      // console.log(data);
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
@@ -66,7 +66,7 @@ class OrderController {
    */
   public newOrder = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
     try {
-      console.log(req.body);
+      // console.log(req.body);
       const orderCreated = await this.Orderservice.getOrder(req.body._id);
       if (orderCreated) {
         return res.status(HttpStatus.BAD_REQUEST).json({

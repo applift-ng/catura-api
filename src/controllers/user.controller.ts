@@ -236,7 +236,7 @@ class UserController {
       });
         googleData = data;
       } else {
-        let token = req.body.token;
+        const token = req.body.token;
           const { data } = await
       axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: {
@@ -245,7 +245,6 @@ class UserController {
       });
         googleData = data;
       }
-    
       // console.log(googleData);
      const userExists = await this.UserService.getUserByEmail(googleData.email);
       if ( !userExists ) {

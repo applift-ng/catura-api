@@ -225,13 +225,27 @@ class UserController {
   public googleCallback = async (req: Request, res: Response): Promise<any> => {
     try {
       const code = req.query;
-      const { tokens } = await this.client.getToken(code);
-      const {data: googleData} = await
+      let googleData;
+      if(code){
+          const { tokens } = await this.client.getToken(code);
+      const { data } = await
       axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
         headers: {
           Authorization: `Bearer ${tokens.access_token}`
         }
       });
+        googleData = data;
+      } else {
+        let token = req.body.token;
+          const { data } = await
+      axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+        googleData = data;
+      }
+    
       // console.log(googleData);
      const userExists = await this.UserService.getUserByEmail(googleData.email);
       if ( !userExists ) {

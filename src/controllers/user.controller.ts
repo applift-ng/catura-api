@@ -9,6 +9,7 @@ import GoogleAuth from '../config/googleauthconfig';
 import axios from 'axios';
 import { IUser } from '../interfaces/user.interface';
 import IdGenerator from '../utils/userId.util';
+import AppUtils from '../utils/app.util';
 
 class UserController {
   public UserService = new userService();
@@ -16,6 +17,7 @@ class UserController {
   private client = new GoogleAuth().client;
   private idGenerate = new IdGenerator();
   private redirectUrl: string;
+  private AppUtils = new AppUtils();
 
   constructor () {
     this.redirectUrl = process.env.USER_REDIRECT_URL;
@@ -79,14 +81,16 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      console.log(req.body);
-      const userExists = await this.UserService.getUserByEmail(req.body.email);
+      // console.log(req.body);
+      const email = this.AppUtils.properEmail(req.body.email);
+
+      const userExists = await this.UserService.getUserByEmail(email);
       if (!userExists) {
         const _id = this.idGenerate.getId();
         const data = await this.UserService.newUser(
-          await this.UserUtils.hashPassword({...req.body, _id })
+          await this.UserUtils.hashPassword({...req.body, _id, email: email })
         );
-        console.log(data);
+        // console.log(data);
         return res.status(HttpStatus.OK).json({
           data: {
             token: await this.UserUtils.signToken({
@@ -170,7 +174,8 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      const userExists = await this.UserService.getUserByEmail(req.body.email);
+      const email = this.AppUtils.properEmail(req.body.email);
+      const userExists = await this.UserService.getUserByEmail(email);
       if (userExists) {
         const passwordCorrect = await compare(
           req.body.password,

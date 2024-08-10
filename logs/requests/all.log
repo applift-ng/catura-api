@@ -7852,3 +7852,241 @@ info: ::ffff:192.168.30.214 - - [09/Jun/2024:01:14:11 +0000] "POST /api/v1/auth/
 
 info: ::ffff:192.168.30.214 - - [09/Jun/2024:01:26:35 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 200 363 "-" "okhttp/4.9.2"
 
+info: ::ffff:192.168.203.24 - - [13/Jun/2024:22:03:38 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 322 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.11.249 - - [13/Jun/2024:22:38:38 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 400 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.11.249 - - [13/Jun/2024:22:39:02 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 200 381 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.11.249 - - [13/Jun/2024:23:02:49 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 382 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.11.249 - - [13/Jun/2024:23:02:49 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 382 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.11.249 - - [13/Jun/2024:23:07:40 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 386 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:49:57 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:51:40 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:53:10 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 500 322 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:56:38 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:57:51 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:58:52 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:59:10 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:09:59:21 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 61 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:03:05 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:03:14 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:03:34 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:05:51 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 382 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:10:07 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 389 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:26 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:28 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:34 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:34 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:34 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:37 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:37 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:38 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:38 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:38 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:39 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:39 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:40 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:40 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:40 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:40 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:41 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:41 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:41 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:41 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:19:41 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 500 75 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:21:46 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 409 55 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:24:04 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 409 55 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:24:09 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 409 55 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:24:35 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:24:42 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:25:07 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 200 378 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:26:03 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 200 378 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:42:52 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 200 378 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.31.56 - - [17/Jun/2024:10:49:54 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 200 378 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:10:12:57 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:10:13:21 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:10:13:22 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:10:14:56 +0000] "POST /api/v1/auth/login/mover HTTP/1.1" 400 58 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:10:16:07 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 409 55 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:15:41:39 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 2313 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:15:46:42 +0000] "GET /api/v1/auth HTTP/1.1" 500 93 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:15:55:34 +0000] "GET /api/v1/auth HTTP/1.1" 200 1043 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:15:55:46 +0000] "GET /api/v1/auth/mover HTTP/1.1" 400 56 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:15:56:21 +0000] "GET /api/v1/auth/mover HTTP/1.1" 400 56 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:15:57:42 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 2313 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:15:58:03 +0000] "GET /api/v1/auth/user HTTP/1.1" 200 1043 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:08:04 +0000] "GET /api/v1/auth/user HTTP/1.1" 200 1043 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:08:40 +0000] "DELETE /api/v1/auth/user/12247597-c8ea-482d-93c4-eb5c1fd6c7e2 HTTP/1.1" 200 60 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:08:46 +0000] "GET /api/v1/auth/user HTTP/1.1" 200 708 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:09:05 +0000] "DELETE /api/v1/auth/user/5093de53-e137-4b84-991d-5d7f9766ab9e HTTP/1.1" 200 60 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:09:09 +0000] "GET /api/v1/auth/user HTTP/1.1" 200 409 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:09:40 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 2313 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:10:09 +0000] "DELETE /api/v1/auth/mover/31893b9b-c382-40c5-923f-fb3d1c60036c HTTP/1.1" 200 60 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:11:08 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 1952 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:11:24 +0000] "DELETE /api/v1/auth/mover/d93ef8ca-10eb-4f98-9dc9-f279a01b674c HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:11:32 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 1598 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:11:45 +0000] "DELETE /api/v1/auth/mover/687b7cac-9006-4828-9f44-d5be600a0e5e HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:11:50 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 1244 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:12:15 +0000] "DELETE /api/v1/auth/mover/0d5463d1-341a-4ca9-841d-c3d9debcdb50 HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:12:32 +0000] "DELETE /api/v1/auth/mover/a6c12bc3-a1e2-4618-a0d7-cbbb070740aa HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:12:49 +0000] "DELETE /api/v1/auth/mover/9279ba5e-0f84-48c7-983d-1bc9fc1aeebb HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:16:12:53 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 66 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:17:25:36 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:17:48:53 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 475 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:17:49:08 +0000] "DELETE /api/v1/auth/mover/e47b66ec-bcc8-4719-9617-ef36be451b1b HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:17:50:16 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:18:42:08 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 475 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:18:42:23 +0000] "DELETE /api/v1/auth/mover/c1f0c54e-50f3-44d3-a06c-8317b5d8b08f HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:18:42:56 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:18:51:52 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 475 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:18:52:03 +0000] "DELETE /api/v1/auth/mover/b9fbf17a-447c-45cb-85c3-4ef7ed569928 HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:18:54:43 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:03:38 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 404 47 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:05:06 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 404 47 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:19:06:17 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 475 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:19:06:30 +0000] "DELETE /api/v1/auth/mover/9bb10076-3982-434e-8d20-b265d49f4bb6 HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:06:55 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:07:37 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 404 47 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:09:02 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 404 47 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:09:40 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 404 47 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:32:57 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 409 55 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:19:33:11 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 475 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:19:33:28 +0000] "DELETE /api/v1/auth/mover/1792736e-b2bf-4e39-9dd4-a4482b03e602 HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:33:34 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:33:58 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 500 139 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:35:26 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 62 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:35:41 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 62 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:36:28 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 62 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:19:36:40 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 515 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:38:03 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 62 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:19:38:12 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 629 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:46:30 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 157 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:19:50:27 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 629 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:19:50:44 +0000] "DELETE /api/v1/auth/mover/d911352b-e4ce-4a74-8e77-0cc1e27e6e16 HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:51:12 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:51:33 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 158 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:52:25 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 158 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:53:11 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 158 "-" "okhttp/4.9.2"
+
+info: ::1 - - [10/Aug/2024:19:53:38 +0000] "GET /api/v1/auth/mover HTTP/1.1" 200 630 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:19:54:04 +0000] "DELETE /api/v1/auth/mover/9aff9b6d-50e2-4fbf-97ae-1481eadcfa7a HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::1 - - [10/Aug/2024:19:54:11 +0000] "DELETE /api/v1/auth/mover/9aff9b6d-50e2-4fbf-97ae-1481eadcfa7a HTTP/1.1" 200 61 "-" "PostmanRuntime/7.40.0"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:54:56 +0000] "POST /api/v1/auth/signup/mover HTTP/1.1" 200 383 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:55:23 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 158 "-" "okhttp/4.9.2"
+
+info: ::ffff:192.168.28.155 - - [10/Aug/2024:19:55:23 +0000] "PUT /api/v1/auth/mover/verify HTTP/1.1" 202 158 "-" "okhttp/4.9.2"
+

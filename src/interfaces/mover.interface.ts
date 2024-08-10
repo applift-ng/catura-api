@@ -12,4 +12,7 @@ export interface IMover extends Document {
   currentAddress: string;
   phone: string;
   bankVerificationNumber: string;
+  isIdentityVerified: boolean;
+  firstName: string;
+  lastName: string;
 }

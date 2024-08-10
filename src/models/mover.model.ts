@@ -21,6 +21,15 @@ const userSchema = new Schema(
     isVerified: {
       type: Boolean
     },
+    isIdentityVerified: {
+      type: Boolean
+    },
+    firstName: {
+      type: String
+    },
+    lastName: {
+      type: String,
+    },
     isGoogleUser: {
       type: Boolean
     },
@@ -33,6 +42,9 @@ const userSchema = new Schema(
     },
     bankVerificationNumber: {
         type: String
+    },
+    identificationDocument: {
+      type: String
     },
   },
   {

@@ -13,7 +13,10 @@ class MoverValidator {
       isVerified: Joi.boolean().required(),
       currentAddress: Joi.string().allow(''),
       bankVerificationNumber: Joi.string().allow(''),
-      phone: Joi.string().allow('')
+      phone: Joi.string().allow(''),
+      firstName: Joi.string().allow(''),
+      lastName: Joi.string().allow(''),
+      isIdentityVerified: Joi.boolean().required(),
     });
     const { error } = schema.validate(req.body);
     if (error) {

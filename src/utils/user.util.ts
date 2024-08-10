@@ -41,7 +41,7 @@ class UserUtils {
   public verifyToken = async (token: string): Promise<IUser> => {
     const user = await verify(token, this.JWT_SECRET);
     return user as IUser;
-  }
+  };
 }
 
 export default UserUtils;

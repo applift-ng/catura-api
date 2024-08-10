@@ -4,6 +4,7 @@ const router = express.Router();
 
 import userRoute from './user.route';
 import OrderRoutes from './order.route';
+import MoverRoutes from './movers.route';
 // import GoogleAuthRoutes from './googleauth.route';
 
 /**
@@ -17,6 +18,7 @@ const routes = (): IRouter => {
   });
   // router.use('/google', new GoogleAuthRoutes().getRoutes());
   router.use('/auth', new userRoute().getRoutes());
+  router.use('/auth', new MoverRoutes().getRoutes());
   router.use('/order', new OrderRoutes().getRoutes());
   return router;
 };

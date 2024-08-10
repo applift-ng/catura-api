@@ -19,50 +19,25 @@ class UserRoutes {
 
   private routes = () => {
     //route to get all users
-    this.router.get('', this.UserController.getAllUsers);
-
-    //route to get all movers
-    this.router.get('/mover', this.MoverController.getAllMovers);
+    this.router.get('/user', this.UserController.getAllUsers);
 
     //route to create a new user
-    this.router.post(
-      '/signup',
-      this.UserValidator.newUser,
-      this.UserController.newUser
-    );
-    //router to create a new mover
-    this.router.post('/signup/mover',
-      this.MoverValidator.newMover,
-      this.MoverController.newUser);
+    this.router.post('/user/signup',
+      this.UserValidator.newUser, this.UserController.newUser);
 
     //router to create a new user using google
-    this.router.get(
-      '/google/callback',
-      this.UserController.googleCallback
-    );
+    this.router.get('/google/callback', this.UserController.googleCallback);
 
-    //router to create a new mover using google
-this.router.get(
-      '/google/mover/callback',
-      this.MoverController.googleCallback
-    );
     //router to login an existing user
-    this.router.post('/login', this.UserController.loginUser);
-
-    //router to login an existing mover
-    this.router.post('/login/mover', this.MoverController.loginUser);
+    this.router.post('/user/login', this.UserController.loginUser);
 
     //route to get a single user
-    this.router.get('/:id', userAuth, this.UserController.getUser);
-
-    //route to get a single mover
-    this.router.get('/:id', userAuth, this.UserController.getUser);
-
+    this.router.get('/user/:id', userAuth, this.UserController.getUser);
     //route to update a single user
     // this.router.put('/:_id', this.UserController.updateUser);
 
     //route to delete a single user
-    // this.router.delete('/:_id', this.UserController.deleteUser);
+    this.router.delete('/user/:_id', this.UserController.deleteUser);
   };
 
   public getRoutes = (): IRouter => {

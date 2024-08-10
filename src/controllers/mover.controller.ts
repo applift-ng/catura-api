@@ -9,13 +9,15 @@ import GoogleAuth from '../config/googleauthconfig';
 import axios from 'axios';
 import { IMover } from '../interfaces/mover.interface';
 import IdGenerator from '../utils/userId.util';
+import AppUtils from '../utils/app.util';
 
-class UserController {
+class MoverController {
   public MoverService = new moverService();
   public MoverUtils = new MoverUtils();
   private client = new GoogleAuth().client;
   private idGenerate = new IdGenerator();
   private redirectUrl: string;
+  private AppUtils = new AppUtils();
 
   constructor () {
     this.redirectUrl = process.env.USER_REDIRECT_URL;
@@ -37,7 +39,7 @@ class UserController {
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
-        message: 'All users fetched successfully'
+        message: 'All movers fetched successfully'
       });
     } catch (error) {
       next(error);
@@ -60,7 +62,7 @@ class UserController {
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: data,
-        message: 'User fetched successfully'
+        message: 'Mover fetched successfully'
       });
     } catch (error) {
       next(error);
@@ -79,15 +81,16 @@ class UserController {
     next: NextFunction
   ): Promise<any> => {
     try {
-      console.log(req.body);
+      // console.log(req.body);
+      const email = this.AppUtils.properEmail(req.body.email);
       const userExists =
-        await this.MoverService.getMoverByEmail(req.body.email);
+        await this.MoverService.getMoverByEmail(email);
       if (!userExists) {
         const _id = this.idGenerate.getId();
         const data = await this.MoverService.newMover(
-          await this.MoverUtils.hashPassword({...req.body, _id })
+          await this.MoverUtils.hashPassword({...req.body, _id, email: email})
         );
-        console.log(data);
+        // console.log(data);
         return res.status(HttpStatus.OK).json({
           data: {
             token: await this.MoverUtils.signToken({
@@ -97,7 +100,7 @@ class UserController {
             user: data._id,
             email: data.email
           },
-          message: 'User created successfully',
+          message: 'Mover created successfully',
           code: HttpStatus.OK
         });
       } else {
@@ -118,7 +121,7 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public updateUser = async (
+  public updateMover = async (
     req: Request,
     res: Response,
     next: NextFunction
@@ -129,7 +132,7 @@ class UserController {
       res.status(HttpStatus.ACCEPTED).json({
         code: HttpStatus.ACCEPTED,
         data: data,
-        message: 'User updated successfully'
+        message: 'Mover updated successfully'
       });
     } catch (error) {
       next(error);
@@ -142,7 +145,7 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public deleteUser = async (
+  public deleteMover = async (
     req: Request,
     res: Response,
     next: NextFunction
@@ -152,7 +155,7 @@ class UserController {
       res.status(HttpStatus.OK).json({
         code: HttpStatus.OK,
         data: {},
-        message: 'User deleted successfully'
+        message: 'Mover deleted successfully'
       });
     } catch (error) {
       next(error);
@@ -164,14 +167,15 @@ class UserController {
    * @param {object} Response - response object
    * @param {function} NextFunction
    */
-  public loginUser = async (
+  public loginMover = async (
     req: Request,
     res: Response,
     next: NextFunction
   ): Promise<any> => {
     try {
+      const email = this.AppUtils.properEmail(req.body.email);
       const userExists =
-        await this.MoverService.getMoverByEmail(req.body.email);
+        await this.MoverService.getMoverByEmail(email);
       if (userExists) {
         const passwordCorrect = await compare(
           req.body.password,
@@ -190,7 +194,7 @@ class UserController {
               email: userExists.email,
               moverId: userExists._id,
             }),
-            accountName: userExists.accountName,
+            moverName: userExists.firstName + userExists.lastName,
             email: userExists.email,
             userId: userExists._id,
           },
@@ -200,7 +204,7 @@ class UserController {
       }
       return res.status(HttpStatus.BAD_REQUEST).json({
         data: '',
-        message: 'User doesnt exist, sign up',
+        message: 'Movnper doesnt exist, sign up',
         code: HttpStatus.BAD_REQUEST
       });
     } catch (error) {
@@ -267,6 +271,28 @@ class UserController {
       })
     }
   }
+  public getMoverDetails =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
+    const data = req.body;
+    // console.log(data);
+    try {
+    const updatedUser = await this.MoverService.updateMover(data.id, data);
+    console.log(updatedUser);
+    if(updatedUser) {
+      return res.status(HttpStatus.ACCEPTED).json({
+        message: 'Details updated successfully, await verification',
+        data: {
+          firstName: updatedUser.firstName,
+          lastName: updatedUser.lastName,
+          id: updatedUser._id,
+        }
+      });
+    }
+    }catch(error) {
+      console.error(error);
+      next(error)
+    }
+  }
 }
 
-export default UserController;
+export default MoverController;

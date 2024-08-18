@@ -18,7 +18,7 @@ const orderSchema = new Schema({
         type: String
        },
        location: {
-        type: Object,
+        type: Object || String,
        }
     },
     price: {

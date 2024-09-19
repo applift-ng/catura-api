@@ -33,10 +33,6 @@ const userSchema = new Schema(
     isGoogleUser: {
       type: Boolean
     },
-    _id: {
-      type: String,
-      required: true
-    }
   },
   {
     timestamps: true

@@ -19,7 +19,7 @@ class UserController {
   private redirectUrl: string;
   private AppUtils = new AppUtils();
 
-  constructor () {
+  constructor() {
     this.redirectUrl = process.env.USER_REDIRECT_URL;
   }
 
@@ -29,11 +29,8 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public getAllUsers = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ): Promise<any> => {
+  public getAllUsers =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
     try {
       const data = await this.UserService.getAllUsers();
       res.status(HttpStatus.OK).json({
@@ -52,11 +49,8 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public getUser = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ): Promise<any> => {
+  public getUser =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
     try {
       const data = await this.UserService.getUser(req.params.id);
       res.status(HttpStatus.OK).json({
@@ -75,20 +69,16 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public newUser = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ): Promise<any> => {
+  public newUser =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
     try {
       // console.log(req.body);
       const email = this.AppUtils.properEmail(req.body.email);
 
       const userExists = await this.UserService.getUserByEmail(email);
       if (!userExists) {
-        const _id = this.idGenerate.getId();
         const data = await this.UserService.newUser(
-          await this.UserUtils.hashPassword({...req.body, _id, email: email })
+          await this.UserUtils.hashPassword({ ...req.body, email: email })
         );
         // console.log(data);
         return res.status(HttpStatus.OK).json({
@@ -123,11 +113,8 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public updateUser = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ): Promise<any> => {
+  public updateUser =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
     try {
       const data = await this.UserService.updateUser(req.params._id, req.body);
       res.status(HttpStatus.ACCEPTED).json({
@@ -146,11 +133,8 @@ class UserController {
    * @param {object} Response - response object
    * @param {Function} NextFunction
    */
-  public deleteUser = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ): Promise<any> => {
+  public deleteUser =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
     try {
       await this.UserService.deleteUser(req.params._id);
       res.status(HttpStatus.OK).json({
@@ -168,19 +152,14 @@ class UserController {
    * @param {object} Response - response object
    * @param {function} NextFunction
    */
-  public loginUser = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ): Promise<any> => {
+  public loginUser =
+  async (req: Request, res: Response, next: NextFunction): Promise<any> => {
     try {
       const email = this.AppUtils.properEmail(req.body.email);
       const userExists = await this.UserService.getUserByEmail(email);
       if (userExists) {
-        const passwordCorrect = await compare(
-          req.body.password,
-          userExists.password
-        );
+        const passwordCorrect =
+        await compare(req.body.password, userExists.password);
         if (!passwordCorrect) {
           return res.status(HttpStatus.BAD_REQUEST).json({
             data: '',
@@ -226,28 +205,30 @@ class UserController {
     try {
       const code = req.query;
       let googleData;
-      if(code){
-          const { tokens } = await this.client.getToken(code);
-      const { data } = await
-      axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
-        headers: {
-          Authorization: `Bearer ${tokens.access_token}`
-        }
-      });
+      if (code) {
+        const { tokens } = await this.client.getToken(code);
+        const { data } =
+        await axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
+          headers: {
+            Authorization: `Bearer ${tokens.access_token}`
+          }
+        });
         googleData = data;
       } else {
         const token = req.body.token;
-          const { data } = await
-      axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
+        const { data } =
+        await axios.get('https://www.googleapis.com/oauth2/v3/userinfo', {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
         googleData = data;
       }
       // console.log(googleData);
-     const userExists = await this.UserService.getUserByEmail(googleData.email);
-      if ( !userExists ) {
+      const userExists =
+      await this.UserService.getUserByEmail(googleData.email);
+      if (!userExists) {
+        // console.log("In");
         const data = await this.UserService.newUser({
           email: googleData.email,
           role: 'user',
@@ -257,6 +238,7 @@ class UserController {
           password: '',
           businessLogo: googleData.picture
         } as IUser);
+        console.log('the data:', data);
         const token = await this.UserUtils.signToken({
           email: data.email,
           userId: data._id,
@@ -270,25 +252,26 @@ class UserController {
           email: userExists.email,
           userId: userExists._id,
           role: userExists.role
-        })
+        });
         res.cookie('jwt', token, {
           httpOnly: true, //accessible only by web server
           secure: true, //https
           sameSite: false, //cross-site cookie
           maxAge: 7 * 24 * 60 * 60 * 1000 //cookie expiry: set to match rT
         });
-         // eslint-disable-next-line max-len
+        // eslint-disable-next-line max-len
         res.redirect(`${this.redirectUrl}/auth/login/${userExists._id}/${token}`);
       }
-      } catch(error) {
+    } catch (error) {
       // console.error(error);
+      console.log('Error:', error);
       res.status(HttpStatus.CONFLICT).json({
         code: HttpStatus.CONFLICT,
         data: '',
         message: 'An error encoutered'
-      })
+      });
     }
-  }
+  };
 }
 
 export default UserController;

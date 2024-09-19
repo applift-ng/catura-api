@@ -34,6 +34,26 @@ class AppUtils {
     }
     return '';
   };
+  public pointIsWithinArea =
+  (location1: Position): boolean => {
+    const point1 = point(location1);
+    const areaPolygon = polygon([
+      [
+        [7.7470547, 5.1558756],
+        [7.6392513, 5.1271525],
+        [7.746368, 5.0313997],
+        [7.8946835, 4.9876222],
+        [8.038879, 5.0245596],
+        [8.0162197, 5.136727],
+        [7.7470547, 5.1558756]
+      ]
+    ]);
+    const point1IsWithinArea = booleanPointInPolygon(point1, areaPolygon);
+    if (point1IsWithinArea ) {
+      return true;
+    }
+    return false;
+  };
   public getDistanceFromLatLonInKm = (
     pos1: { lat1: number; lon1: number },
     pos2: { lat2: number; lon2: number }

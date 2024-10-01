@@ -33,6 +33,9 @@ const userSchema = new Schema(
     isGoogleUser: {
       type: Boolean
     },
+    storeLocation: {
+      type: Object
+    }
   },
   {
     timestamps: true
